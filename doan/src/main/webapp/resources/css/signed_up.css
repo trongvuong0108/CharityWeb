@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+}
+
+body h1 {
+  text-align: center;
+  color: #fc02029d;
+}
+
+body a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.5em 1rem;
+  background-color: #fc02029d;
+  color: white;
+}
+/*# sourceMappingURL=signup_volumtee.css.map */

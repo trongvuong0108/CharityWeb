@@ -30,20 +30,20 @@
 					<input type="text" name="email" />
 				</div>
 				<div class="signup__input">
-					<label for="password">Mật Khẩu</label> 
-					<input type="password" name="matkhau" />
-				</div>
-				<div class="signup__input">
-					<label for="repassword">Nhập Lại Mật Khẩu</label> 
-					<input type="password" name="repassword" />
-				</div>
-				<div class="signup__input">
 					<label for="fullName">Họ Tên</label> 
 					<input type="text"name="hoten" />
 				</div>
 				<div class="signup__input">
+					<label for="password">Mật Khẩu</label> 
+					<input type="password" name="matkhau" />
+				</div>
+				<div class="signup__input">
 					<label for="phone">Số Điện Thoại</label> 
 					<input type="number" name="phone" />
+				</div>
+				<div class="signup__input">
+					<label for="repassword">Nhập Lại Mật Khẩu</label> 
+					<input type="password" name="repassword" />
 				</div>
 				<div class="signup__input">
 					<label for="dob">Ngày Sinh</label> 

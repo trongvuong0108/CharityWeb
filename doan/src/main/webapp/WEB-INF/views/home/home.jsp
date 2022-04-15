@@ -35,18 +35,6 @@
 
 		</div>
 	</div>
-
-	<div class="find__toolbar">
-		<div>
-			<label for="date-post">Ngày Đăng</label> <input type="date"
-				name="date-post" />
-		</div>
-		<div>
-			<label for="owner">Người Đăng</label> <input type="text" name="owner" />
-		</div>
-		<button>Tìm Kiếm</button>
-	</div>
-
 	<div class="home__list__news">
 		<div class="homoe__pagination">
 			<button>Trước</button>

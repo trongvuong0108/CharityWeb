@@ -21,12 +21,6 @@
 
 		<div class="tab">
 			<div id="Address" class="city">
-				<form class="account__find">
-					<input type="date"  name = "kw"/> <input type="date" />
-					<button type="submit">
-						<i class="fa-solid fa-magnifying-glass"></i>
-					</button>
-				</form>
 				<div class="account__content">
 					<div class="account__table__list" style="flex-basis: 100%">
 						<div class="table__pagination">

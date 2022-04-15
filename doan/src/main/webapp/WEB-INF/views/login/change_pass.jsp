@@ -28,7 +28,7 @@
 			<form:form action="savePassword?username=${param.username}" method="post" class="signup__form" modelAttribute = "user">
 				<div class="signup__input">
 					<label for="email">Email</label> 
-					<input type="text" name="email" />
+					<input type="text" name="email" disabled/>
 				</div>
 				<div class="signup__input">
 					<label for="password">Mật Khẩu</label> 

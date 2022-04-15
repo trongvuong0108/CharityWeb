@@ -25,7 +25,7 @@
 				<form class="account__find"  action="/doan/admin/taikhoan/search">
 					<input type="text" name ="kw"/> 
 					<button type="submit">
-						<i class="fa-solid fa-magnifying-glass">Tìm kiếm</i>
+						Tìm kiếm
 					</button>
 				</form>
 				<div class="account__content">
@@ -68,7 +68,7 @@
                   <option value="Tên">Tên</option>
                 </select> -->
 							<button type="submit">
-								<i class="fa-solid fa-magnifying-glass"></i>
+								Tìm kiếm
 							</button>
 						</form>
 						<div class="request__list">
@@ -77,12 +77,7 @@
 								<div class="request__email">${user.email}</div>
 								<div class="request__nav">
 									<button class="accept">
-										<i class="fa-solid fa-check">
 										<a href="/doan/admin/taikhoan/accept?username=${user.email}"> Accept</a>
-										</i>
-									</button>
-									<button class="defuse">
-										<i class="fa-solid fa-xmark"></i>
 									</button>
 								</div>
 							</div>

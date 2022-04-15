@@ -91,11 +91,10 @@
 .home__list__news .home__news {
   margin: 0 0.6rem;
   padding: 5px;
-  border: 1px solid #fc02029d;
   width: fit-content;
   margin-bottom: 1rem;
   display: flex;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
 .home__list__news .home__news img {
@@ -132,3 +131,9 @@
   border-radius: 20px;
   border: none;
 }
+
+button a{
+	color: white;
+	text-decoration: none;
+}
+

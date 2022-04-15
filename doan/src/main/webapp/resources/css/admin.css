@@ -1,364 +1,412 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	color: #fc02029d;
+	text-decoration: none;
 }
 
 .nav__tab {
-  display: flex;
+	display: flex;
 }
 
 .nav__tab .nav {
-  width: 7%;
-  height: 100vh;
-  padding: 20px 0;
-  display: flex;
-  flex-direction: column;
-  background-color: #fc02029d;
-  gap: 20px;
+	width: 7%;
+	height: 100vh;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	background-color: #fc02029d;
+	gap: 20px;
 }
 
 .nav__tab .nav img {
-  width: 75px;
-  margin: 0 auto;
-  border-radius: 50%;
+	width: 75px;
+	margin: 0 auto;
+	border-radius: 50%;
 }
 
 .nav__tab .nav button {
-  margin: 0 auto;
-  width: fit-content;
-  padding: 10px;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  color: white;
-  width: 100px;
-  transition: all 0.5s;
-  cursor: pointer;
+	margin: 0 auto;
+	width: fit-content;
+	padding: 10px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	color: #fc02029d;
+	width: 100px;
+	transition: all 0.5s;
+	cursor: pointer;
 }
 
 .nav__tab .nav button.active {
-  border-radius: 20px;
-  background-color: white;
-  color: #fc02029d;
-  transition: all 0.5s;
+	border-radius: 20px;
+	background-color: white;
+	color: white;
+	transition: all 0.5s;
 }
 
 .nav__tab .tab {
-  padding: 20px;
-  width: 100%;
+	padding: 20px;
+	width: 100%;
 }
 
 .nav__tab .tab .account__find {
-  padding: 15px;
-  border: 1px solid #fc02029d;
-  display: flex;
-  width: fit-content;
+	padding: 15px;
+	border: 1px solid #fc02029d;
+	display: flex;
+	width: fit-content;
 }
 
 .nav__tab .tab .account__find input {
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #fc02029d;
-  color: #fc02029d;
-  padding: 5px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #fc02029d;
+	color: #fc02029d;
+	padding: 5px;
 }
 
 .nav__tab .tab .account__find #find__option {
-  border: none;
-  outline: none;
-  color: #fc02029d;
-  border-bottom: 1px solid #fc02029d;
+	border: none;
+	outline: none;
+	color: #fc02029d;
+	border-bottom: 1px solid #fc02029d;
 }
 
 .nav__tab .tab .account__find button {
-  margin-left: 1rem;
-  padding: 0 10px;
-  color: white;
-  background-color: #fc02029d;
-  outline: none;
-  border: none;
+	margin-left: 1rem;
+	padding: 0 10px;
+	color: white;
+	background-color: #fc02029d;
+	outline: none;
+	border: none;
 }
 
 .nav__tab .tab .account__content {
-  margin-top: 2rem;
-  display: flex;
-  gap: 2rem;
+	margin-top: 2rem;
+	display: flex;
+	gap: 2rem;
 }
 
 .nav__tab .tab .account__content .account__table__list {
-  position: relative;
-  flex-basis: 70%;
-  border: 1px solid #fc02029d;
+	position: relative;
+	flex-basis: 70%;
+	border: 1px solid #fc02029d;
 }
 
 .nav__tab .tab .account__content .account__table__list .add__address {
-  position: absolute;
-  left: 50%;
-  bottom: -20%;
-  transform: translateX(-50%);
-  padding: 1rem;
-  color: white;
-  background-color: #fc02029d;
-  outline: none;
-  border: none;
-  border-radius: 20px;
+	position: absolute;
+	left: 50%;
+	bottom: -20%;
+	transform: translateX(-50%);
+	padding: 1rem;
+	color: white;
+	background-color: #fc02029d;
+	outline: none;
+	border: none;
+	border-radius: 20px;
 }
 
-.nav__tab .tab .account__content .account__table__list .table__pagination {
-  position: absolute;
-  left: 50%;
-  bottom: -10%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.nav__tab .tab .account__content .account__table__list .table__pagination
+	{
+	position: absolute;
+	left: 50%;
+	bottom: -10%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
-.nav__tab .tab .account__content .account__table__list .table__pagination span {
-  font-size: 20px;
-  font-weight: bold;
+.nav__tab .tab .account__content .account__table__list .table__pagination span
+	{
+	font-size: 20px;
+	font-weight: bold;
 }
 
-.nav__tab .tab .account__content .account__table__list .table__pagination button {
-  width: 75px;
-  background-color: #fc02029d;
-  color: white;
-  padding: 0.5rem;
-  outline: none;
-  border-radius: 20px;
-  border: none;
+.nav__tab .tab .account__content .account__table__list .table__pagination button
+	{
+	width: 75px;
+	background-color: #fc02029d;
+	color: white;
+	padding: 0.5rem;
+	outline: none;
+	border-radius: 20px;
+	border: none;
 }
 
 .nav__tab .tab .account__content .account__table__list .table__title {
-  display: flex;
-  justify-content: space-between;
-  color: #fc02029d;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
+	display: flex;
+	justify-content: space-between;
+	color: #fc02029d;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
 }
 
-.nav__tab .tab .account__content .account__table__list .table__title .title__item {
-  padding: 0.5rem 0;
-  flex-basis: 25%;
-  border: 1px solid #fc02029d;
+.nav__tab .tab .account__content .account__table__list .table__title .title__item
+	{
+	padding: 0.5rem 0;
+	flex-basis: 25%;
+	border: 1px solid #fc02029d;
 }
 
 .nav__tab .tab .account__content .account__table__list .table__content {
-  height: 60vh;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  border: 1px solid #fc02029d;
+	height: 60vh;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	border: 1px solid #fc02029d;
 }
 
-.nav__tab .tab .account__content .account__table__list .table__content .content__item {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+.nav__tab .tab .account__content .account__table__list .table__content .content__item
+	{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
 }
 
-.nav__tab .tab .account__content .account__table__list .table__content .content__item .content__des {
-  padding: 0.5rem 0;
-  flex-basis: 25%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.nav__tab .tab .account__content .account__table__list .table__content .content__item .content__des
+	{
+	padding: 0.5rem 0;
+	flex-basis: 25%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
-.nav__tab .tab .account__content .account__table__list .table__content .content__item .content__des button {
-  background-color: #fc02029d;
-  color: white;
-  padding: 0.5rem;
-  outline: none;
-  border-radius: 20px;
-  border: none;
+.nav__tab .tab .account__content .account__table__list .table__content .content__item .content__des button
+	{
+	background-color: #fc02029d;
+	color: white;
+	padding: 0.5rem;
+	outline: none;
+	border-radius: 20px;
+	border: none;
 }
 
 .nav__tab .tab .account__content .account__request__list {
-  flex-basis: 30%;
-  border: 1px solid #fc02029d;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	flex-basis: 30%;
+	border: 1px solid #fc02029d;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-.nav__tab .tab .account__content .account__request__list .table__pagination {
-  position: absolute;
-  left: 50%;
-  bottom: -10%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.nav__tab .tab .account__content .account__request__list .table__pagination
+	{
+	position: absolute;
+	left: 50%;
+	bottom: -10%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
-.nav__tab .tab .account__content .account__request__list .table__pagination span {
-  font-size: 20px;
-  font-weight: bold;
+.nav__tab .tab .account__content .account__request__list .table__pagination span
+	{
+	font-size: 20px;
+	font-weight: bold;
 }
 
-.nav__tab .tab .account__content .account__request__list .table__pagination button {
-  width: 75px;
-  background-color: #fc02029d;
-  color: white;
-  padding: 0.5rem;
-  outline: none;
-  border-radius: 20px;
-  border: none;
+.nav__tab .tab .account__content .account__request__list .table__pagination button
+	{
+	width: 75px;
+	background-color: #fc02029d;
+	color: white;
+	padding: 0.5rem;
+	outline: none;
+	border-radius: 20px;
+	border: none;
 }
 
-.nav__tab .tab .account__content .account__request__list .account__find {
-  border: none;
-  border-bottom: 1px solid #fc02029d;
-  width: 100%;
+.nav__tab .tab .account__content .account__request__list .account__find
+	{
+	border: none;
+	border-bottom: 1px solid #fc02029d;
+	width: 100%;
 }
 
-.nav__tab .tab .account__content .account__request__list .account__find input {
-  width: 100%;
+.nav__tab .tab .account__content .account__request__list .account__find input
+	{
+	width: 100%;
 }
 
 .nav__tab .tab .account__content .account__request__list .request__nav {
-  display: flex;
-  gap: 0.75rem;
+	display: flex;
+	gap: 0.75rem;
 }
 
-.nav__tab .tab .account__content .account__request__list .request__nav button {
-  outline: none;
-  border: none;
-  color: white;
-  padding: 0.5rem;
+.nav__tab .tab .account__content .account__request__list .request__nav button
+	{
+	outline: none;
+	border: none;
+	color: white;
+	padding: 0.5rem;
 }
 
-.nav__tab .tab .account__content .account__request__list .request__nav .accept {
-  background-color: #05fd05;
+.nav__tab .tab .account__content .account__request__list .request__nav .accept
+	{
+	background-color: #05fd05;
 }
 
-.nav__tab .tab .account__content .account__request__list .request__nav .defuse {
-  background-color: #fd0505;
+.nav__tab .tab .account__content .account__request__list .request__nav .accept>a
+	{
+	color: white;
 }
 
-.nav__tab .tab .account__content .account__request__list .request__nav__general {
-  border-top: 1px solid #fc02029d;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
+.nav__tab .tab .account__content .account__request__list .request__nav .defuse
+	{
+	background-color: #fd0505;
 }
 
-.nav__tab .tab .account__content .account__request__list .request__nav__general button {
-  color: black !important;
+.nav__tab .tab .account__content .account__request__list .request__nav__general
+	{
+	border-top: 1px solid #fc02029d;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem;
 }
 
-.nav__tab .tab .account__content .account__request__list .request__list {
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
+.nav__tab .tab .account__content .account__request__list .request__nav__general button
+	{
+	color: black !important;
 }
 
-.nav__tab .tab .account__content .account__request__list .request__list .request__item {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 10px;
+.nav__tab .tab .account__content .account__request__list .request__list
+	{
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
 }
 
-.nav__tab .tab .account__content .account__request__list .request__list .request__item .request__email {
-  font-size: 18px;
-  color: #fc02029d;
-  font-weight: bold;
+.nav__tab .tab .account__content .account__request__list .request__list .request__item
+	{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 10px;
 }
 
-.nav__tab .tab .account__content .account__request__list .request__list .request__item .request__nav button {
-  outline: none;
-  border: none;
-  color: white;
-  padding: 0.5rem;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+.nav__tab .tab .account__content .account__request__list .request__list .request__item .request__email
+	{
+	font-size: 18px;
+	color: #fc02029d;
+	font-weight: bold;
+}
+
+.nav__tab .tab .account__content .account__request__list .request__list .request__item .request__nav button
+	{
+	outline: none;
+	border: none;
+	color: white;
+	padding: 0.5rem;
 }
 
 .nav__tab .tab .news__tool {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 3rem;
+	display: flex;
+	gap: 2rem;
+	margin-bottom: 3rem;
 }
 
 .nav__tab .tab .news__table {
-  position: relative;
-  border: 1px solid #fc02029d;
+	position: relative;
+	border: 1px solid #fc02029d;
+}
+
+.add__address a{
+	color: white;
+}
+
+
+.nav__tab .tab .news__table  .add__address {
+	position: absolute;
+	left: 50%;
+	bottom: -20%;
+	transform: translateX(-50%);
+	padding: 1rem;
+	color: white;
+	background-color: #fc02029d;
+	outline: none;
+	border: none;
+	border-radius: 20px;
 }
 
 .nav__tab .tab .news__table .table__pagination {
-  position: absolute;
-  left: 50%;
-  bottom: -10%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+	position: absolute;
+	left: 50%;
+	bottom: -10%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
 .nav__tab .tab .news__table .table__pagination span {
-  font-size: 20px;
-  font-weight: bold;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .nav__tab .tab .news__table .table__pagination button {
-  width: 75px;
-  background-color: #fc02029d;
-  color: white;
-  padding: 0.5rem;
-  outline: none;
-  border-radius: 20px;
-  border: none;
+	width: 75px;
+	background-color: #fc02029d;
+	color: white;
+	padding: 0.5rem;
+	outline: none;
+	border-radius: 20px;
+	border: none;
 }
 
 .nav__tab .tab .news__table .table__title {
-  display: flex;
-  justify-content: space-between;
-  color: #fc02029d;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
+	display: flex;
+	justify-content: space-between;
+	color: #fc02029d;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
 }
 
 .nav__tab .tab .news__table .table__title .title__item {
-  padding: 0.5rem 0;
-  flex-basis: 20%;
-  border: 1px solid #fc02029d;
+	padding: 0.5rem 0;
+	flex-basis: 25%;
+	border: 1px solid #fc02029d;
 }
 
 .nav__tab .tab .news__table .table__content {
-  height: 60vh;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  border: 1px solid #fc02029d;
+	height: 60vh;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	border: 1px solid #fc02029d;
 }
 
 .nav__tab .tab .news__table .table__content .content__item {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
 }
 
-.nav__tab .tab .news__table .table__content .content__item .content__des {
-  padding: 0.5rem 0;
-  flex-basis: 20%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.nav__tab .tab .news__table .table__content .content__item .content__des
+	{
+	padding: 0.5rem 0;
+	flex-basis: 25%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
-.nav__tab .tab .news__table .table__content .content__item .content__des button {
-  background-color: #fc02029d;
-  color: white;
-  padding: 0.5rem;
-  outline: none;
-  border-radius: 20px;
-  border: none;
+.nav__tab .tab .news__table .table__content .content__item .content__des button
+	{
+	background-color: #fc02029d;
+	color: white;
+	padding: 0.5rem;
+	outline: none;
+	border-radius: 20px;
+	border: none;
 }
 /*# sourceMappingURL=admin.css.map */

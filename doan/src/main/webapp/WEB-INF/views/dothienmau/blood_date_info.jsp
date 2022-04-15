@@ -7,7 +7,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<link href="<c:url value = "/resources/css/admin.css"/>" rel="stylesheet" />
+<link href="<c:url value = "/resources/css/address_info.css"/>" rel="stylesheet" />
 </head>
 <body>
 	<div class="signup__card">
