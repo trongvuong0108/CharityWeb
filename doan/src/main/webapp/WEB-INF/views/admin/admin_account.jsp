@@ -12,7 +12,7 @@
 <body>
 	<div class="nav__tab">
 		<div class="nav">
-			<a href="/doan"><img src="<c:url value = "/resources/img/logo.jpg"/>" alt=""/></a>
+			<img src="<c:url value = "/resources/img/logo.jpg"/>" alt=""/>
 			<button class="nav-item active"id="nav-Account"><a href="/doan/admin/taikhoan">Tài khoảng</a></button>
 			<button class=" nav-item" id="nav-News"><a href="/doan/admin/baidang">Bài Viết</a></button>
 			<button class="nav-item" id="nav-Account"><a href="/doan/admin/diadiem">Địa điểm</a></button>

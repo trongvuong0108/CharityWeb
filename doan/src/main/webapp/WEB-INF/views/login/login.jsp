@@ -16,11 +16,9 @@
 			<img src="<c:url value = "/resources/img/login.jpg "/>" alt="" />
 		</div>
 		<div class="login__container">
-			<div class="login__navigation">
-				<a href="#">Trang Chủ</a> 
-				<a href="#">Đăng Nhập</a> 
-				<a href="#">Đăng Ký</a>
-			</div>
+			
+			<%@ include file="/WEB-INF/component/login_header.jsp" %>
+			
 			<div class="login__logo">
 				<img src="<c:url value = "/resources/img/logo.jpg "/>" alt="logo" />
 			</div>
@@ -35,10 +33,6 @@
 				<div class="login__input">
 					<label for="password">Mật Khẩu</label> 
 					<input type="password" name="password" />
-				</div>
-				<div class="login__options">
-					<input type="checkbox" name="save__account" id="" />
-					 <label for="save__account">Lưu Tài Khoản</label>
 				</div>
 				<button type="submit">Đăng Nhập</button>
 			</form:form>

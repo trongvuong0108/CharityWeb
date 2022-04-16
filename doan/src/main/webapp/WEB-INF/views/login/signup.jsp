@@ -12,22 +12,15 @@
 </head>
 <body>
 	<div class="signup__card">
-		<!-- <div class="signup__cover">
-          <img src="../img/login.jpg" alt="" srcset="" />
-        </div> -->
 		<div class="signup__container">
-			<div class="signup__navigation">
-				<a href="#">Trang Chủ</a> 
-				<a href="#">Đăng Nhập</a> 
-				<a href="#">Đăng Ký</a>
-			</div>
+			<%@ include file="/WEB-INF/component/login_header.jsp" %>
 			<div class="signup__logo">
 				<img src="<c:url value = "/resources/img/logo.jpg "/>" alt="logo" />
 			</div>
 			<form:form action="save" method="post" class="signup__form" modelAttribute="user">
 				<div class="signup__input">
 					<label for="email">Email</label> 
-					<input type="text" name="email" />
+					<input type="text" name="email"/>
 				</div>
 				<div class="signup__input">
 					<label for="fullName">Họ Tên</label> 
@@ -65,10 +58,6 @@
 							<label for="sex">Nữ</label>
 						</div>
 					</div>
-				</div>
-				<div class="signup__options">
-					<input type="checkbox" name="show__password" /> 
-					<label for="show__password">Hiện Mật Khẩu</label>
 				</div>
 				<button type="submit">Đăng Ký</button>
 			</form:form>

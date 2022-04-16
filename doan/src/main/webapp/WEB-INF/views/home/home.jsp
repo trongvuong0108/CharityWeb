@@ -15,34 +15,27 @@
 </head>
 
 <body>
-	<div class="header__container">
-		<a class="header__logo" href="#"> <img
-			src="<c:url value = "/resources/img/logo.jpg "/>" alt="" />
-		</a>
-		<div class="header__navigation">
-			<c:choose>
-				<c:when test="${name == 'anonymousUser'}">
-					<a href="<c:url value= "/login"/>">Đăng nhập/ Đăng Ký</a>
-				</c:when>
-				<c:otherwise>
-					<a href="changeInfo?username=${name}">Hello,${name}</a>
-					<div></div>
-					<a href="<c:url value= "/logout"/>">Đăng xuất</a>
-				</c:otherwise>
-			</c:choose>
-
-			<a href="#">Các Bài Viết</a>
-
-		</div>
-	</div>
+	<%@ include file="/WEB-INF/component/header.jsp" %>
 	<div class="home__list__news">
 		<div class="homoe__pagination">
-			<button>Trước</button>
-			<span>1/10</span>
-			<button>Sau</button>
-		</div>
+            <button><a href="/doan/?p=0">Đầu</a></button>
+            
+            <c:choose>
+                <c:when test="${listPost.number -1 >= 0}">
+                    <button><a href="/doan/?p=${listPost.number -1 }"> Trước </a></button>
+                </c:when>
+            </c:choose>
+
+            <c:choose>
+                <c:when test="${listPost.number < listPost.totalPages-1 }">
+                    <button><a href="/doan/?p=${listPost.number + 1 }">Sau</a></button>
+                </c:when>
+            </c:choose>	
+            
+            <button><a href="/doan/?p=${listPost.totalPages-1}">Cuối</a></button>
+        </div>
 		<div class="home__news">
-			<c:forEach items="${listPost}" var="post">
+			<c:forEach items="${listPost.content}" var="post">
 				<img src="<c:url value = "/resources/img/login.jpg "/>" alt="" />
 				<div class="news__description">
 					<p class="news__owner">Người Đăng:</p>

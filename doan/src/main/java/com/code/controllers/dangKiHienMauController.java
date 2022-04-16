@@ -8,6 +8,8 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -42,7 +44,9 @@ public class dangKiHienMauController {
 	private MailSender mailSender;
 
 	@GetMapping("/dienEmail")
-	public String dangki(Map<String, Object> model, @RequestParam int id) {
+	public String dangki(Map<String, Object> model, @RequestParam int id, ModelMap modelM) {
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		modelM.addAttribute("name", auth.getName());
 		thongtin thongtin = new thongtin();
         model.put("thongtin",thongtin);
 		return "voluntee/email";
@@ -60,7 +64,9 @@ public class dangKiHienMauController {
 		}
 	}
 	@GetMapping("/hasInfo")
-	public String hasInfo(Map<String, Object> model, @RequestParam int id_post,@RequestParam String username) {	
+	public String hasInfo(Map<String, Object> model, @RequestParam int id_post,@RequestParam String username, ModelMap modelM) {	
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		modelM.addAttribute("name", auth.getName());
 		List<phieudk> phieudks = phieudkService.getAll();
 		for (phieudk phieudk : phieudks) {
 			if(phieudk.getThongtin().getEmail().equals(username) && phieudk.getBaidang().getId() == id_post)
@@ -71,10 +77,11 @@ public class dangKiHienMauController {
 	}
 	
 	@GetMapping("/dontHasInfo")
-	public String dontHasInfo(Map<String, Object> model, @RequestParam int id_post,@RequestParam String username) {
+	public String dontHasInfo(Map<String, Object> model, @RequestParam int id_post,@RequestParam String username, ModelMap modelM) {
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		modelM.addAttribute("name", auth.getName());
 		thongtin thongtin = new thongtin();
         model.put("thongtin",thongtin);
-//        System.out.print(thongtin.toString());
         return "voluntee/signup_voluntee";
 	}
 	
