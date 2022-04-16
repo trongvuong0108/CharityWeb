@@ -10,16 +10,7 @@
 	<link href="<c:url value = "/resources/css/info_user.css"/>"rel="stylesheet" />
 </head>
 <body>
-<div class="header__container">
-      <a class="header__logo" href="#">
-        <img src="<c:url value = "/resources/img/logo.jpg "/>" alt="" />
-      </a>
-      <div class="header__navigation">
-        <a href="#">Hello word</a>
-        <a href="#">Các Bài Viết</a>
-        <a href="#">Đăng nhập/ Đăng Ký</a>
-      </div>
-    </div>
+<%@ include file="/WEB-INF/component/header.jsp" %>
     
     <div class="info__container">
       <div class="info__content">

@@ -59,7 +59,9 @@ public class postsController {
 	}
 	
 	@GetMapping("/new")
-	public String save(Map<String, Object> model) {
+	public String save(Map<String, Object> model, ModelMap modelM) {
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		modelM.addAttribute("name", auth.getName());
 		baidang baidang = new baidang();
 		model.put("baidang", baidang);
 		model.put("diadiems", diadiemService.getAll());
@@ -78,6 +80,8 @@ public class postsController {
 	
 	@GetMapping("/edit")
 	public String edit(Model model, @RequestParam int id) {
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		model.addAttribute("name", auth.getName());
 		dothienmau dothienmau = dothienmauService.getById(id);
 		model.addAttribute("dothienmau", dothienmau);
 		return "news/edit_news"; 

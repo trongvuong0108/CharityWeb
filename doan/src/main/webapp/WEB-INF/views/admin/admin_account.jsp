@@ -30,16 +30,10 @@
 				</form>
 				<div class="account__content">
 					<div class="account__table__list">
-						<div class="table__pagination">
-							<button>Trước</button>
-							<span>1/10</span>
-							<button>Sau</button>
-						</div>
 						<div class="table__title">
 							<div class="title__item">Email</div>
 							<div class="title__item">Họ Tên</div>
 							<div class="title__item">Quyền</div>
-							<div class="title__item">Thao Tác</div>
 						</div>
 						<div class="table__content">
 						<c:forEach items="${listUser}" var="user">
@@ -47,20 +41,12 @@
 								<div class="content__des">${user.email}</div>
 								<div class="content__des">${user.hoten}</div>
 								<div class="content__des">${user.userRole.name}</div>
-								<div class="content__des">
-									<button>Xem Chi Tiết</button>
-								</div>
 							</div>
 						</c:forEach>
 						</div>
 					</div>
 
 					<div class="account__request__list">
-						<div class="table__pagination">
-							<button>Trước</button>
-							<span>1/10</span>
-							<button>Sau</button>
-						</div>
 						<form class="account__find">
 							<input type="text" />
 							<!-- <select id="find__option">

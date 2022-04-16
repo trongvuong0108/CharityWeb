@@ -13,7 +13,7 @@
 	<div class="signup__card">
 		<div class="signup__container">
 			<div class="signup__navigation">
-				<a href="#">Trở Về</a>
+				<a href="/doan/admin/dothienmau">Trở Về</a>
 			</div>
 			<form:form action="saveEdit?id=${dothienmau.id}" method="post" class="signup__form" modelAttribute="dothienmau">
 				<div class="signup__input">

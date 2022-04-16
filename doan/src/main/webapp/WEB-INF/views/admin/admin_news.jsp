@@ -43,7 +43,6 @@
 						<div class="title__item">Email</div>
 						<div class="title__item">Họ Tên</div>
 						<div class="title__item">Ngày Đăng</div>
-						<div class="title__item">Thao Tác</div>
 					</div>
 					<div class="table__content">
 						<c:forEach items="${listPost}" var="post">
@@ -52,9 +51,6 @@
 								<div class="content__des">${post.user.email}</div>
 								<div class="content__des">${post.user.hoten}</div>
 								<div class="content__des">${post.ngaydang}</div>
-								<div class="content__des">
-									<button>Danh sách đăng ký</button>
-								</div>
 
 							</div>
 						</c:forEach>

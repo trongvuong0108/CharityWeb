@@ -11,15 +11,7 @@
 	rel="stylesheet" />
 </head>
 <body>
-	<div class="header__container">
-		<a class="header__logo" href="#"> <img src="<c:url value = "/resources/img/logo.jpg "/>"
-			alt="" />
-		</a>
-		<div class="header__navigation">
-			<a href="#">Hello word</a> <a href="#">Các Bài Viết</a> <a href="#">Đăng
-				nhập/ Đăng Ký</a>
-		</div>
-	</div>
+	<%@ include file="/WEB-INF/component/header.jsp" %>
 	<div class="signup__card">
 		<div class="signup__container">
 			<div class="signup__navigation">
@@ -43,10 +35,6 @@
 				<div class="signup__input">
 					<label for="repassword">Nhập Lại Mật Khẩu mới</label> 
 					<input type="password"  />
-				</div>
-				<div class="signup__options">
-					<input type="checkbox" name="show__password" /> 
-					<label for="show__password">Hiện Mật Khẩu</label>
 				</div>
 				<button type="submit">Lưu</button>
 			</form:form>
