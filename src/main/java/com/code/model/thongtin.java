@@ -1,15 +1,7 @@
 package com.code.model;
 
+import jakarta.persistence.*;
 import java.util.List;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
 
 
 
@@ -18,30 +10,14 @@ import javax.persistence.Table;
 public class thongtin {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id_thongtin")
     private int id ;
-
-	@Column(name = "email")
 	private String email;
-	
-	@Column(name = "ten")
-	private String ten; 
-	
-	@Column(name = "ngaysinh")
-	private String ngaysinh; 
-	
-	@Column(name = "diachi")
-	private String diachi; 
-	
-	@Column(name = "sokg")
-	private String sokg; 
-
-	@Column(name = "gioitinh")
+	private String ten;
+	private String ngaysinh;
+	private String diachi;
+	private String sokg;
 	private boolean gioitinh;
-	
-	@Column(name = "phone")
-	private String phone; 
-	
+	private String phone;
 	@OneToMany(mappedBy = "thongtin",cascade = CascadeType.ALL)
 	private List<phieudk> phieudks ; 
 	

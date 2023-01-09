@@ -1,32 +1,18 @@
 package com.code.model;
 
+import jakarta.persistence.*;
 import java.sql.Date;
 import java.util.Set;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-
 @Entity
-@Table(name = "taikhoan")
+@Table(name = "user")
 public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
     private int id ;
-
-	@Column(name = "email")
 	private String email;
-	
-	@Column(name = "matkhau")
+
 	private String matkhau; 
 	
 	@ManyToOne
@@ -35,24 +21,17 @@ public class User {
 	
 	@OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
     private Set<baidang> posts ;
-	
-	
-	@Column(name = "diachi")
+
 	private String diachi;
-	
-	@Column(name = "hoten")
+
 	private String hoten; 
-	
-	@Column(name = "phone")
+
 	private String phone;
 
-	@Column(name = "ngaysinh")
 	private Date ngaysinh;
-	
-	@Column(name = "gioitinh")
+
 	private boolean gioitinh;
-	
-	@Column(name = "status")
+
 	private boolean status; 
 
 	public int getId() {
