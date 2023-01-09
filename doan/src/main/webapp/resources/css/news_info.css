@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.news__info__container {
+  padding: 1.5rem;
+}
+
+.news__info__container .news__tool {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.news__info__container .news__tool button {
+  width: 75px;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 0 10px;
+  color: white;
+  background-color: #fc02029d;
+  outline: none;
+  border: none;
+}
+
+.news__info__container .news__info__content {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.news__info__container .account__find {
+  padding: 5px;
+  border: 1px solid #fc02029d;
+  display: flex;
+  width: fit-content;
+}
+
+.news__info__container .account__find input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fc02029d;
+  color: #fc02029d;
+  padding: 5px;
+}
+
+.news__info__container .account__find #find__option {
+  border: none;
+  outline: none;
+  color: #fc02029d;
+  border-bottom: 1px solid #fc02029d;
+}
+
+.news__info__container .account__find button {
+  width: fit-content;
+  font-size: 15px !important;
+  margin-left: 1rem;
+  padding: 10px 15px;
+  color: white;
+  background-color: #fc02029d;
+  outline: none;
+  border: none;
+}
+
+.news__info__container .account__content {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.news__info__container .account__content .account__table__list {
+  position: relative;
+  flex-basis: 100%;
+  border: 1px solid #fc02029d;
+}
+
+.news__info__container .account__content .account__table__list .table__pagination {
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.news__info__container .account__content .account__table__list .table__pagination span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.news__info__container .account__content .account__table__list .table__pagination button {
+  width: 75px;
+  background-color: #fc02029d;
+  color: white;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+}
+
+.news__info__container .account__content .account__table__list .table__title {
+  display: flex;
+  justify-content: space-between;
+  color: #fc02029d;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.news__info__container .account__content .account__table__list .table__title .title__item {
+  padding: 0.5rem 0;
+  flex-basis: 20%;
+  border: 1px solid #fc02029d;
+}
+
+.news__info__container .account__content .account__table__list .table__content {
+  height: 60vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  border: 1px solid #fc02029d;
+}
+
+.news__info__container .account__content .account__table__list .table__content .content__item {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.news__info__container .account__content .account__table__list .table__content .content__item .content__des {
+  padding: 0.5rem 0;
+  flex-basis: 20%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.news__info__container .account__content .account__table__list .table__content .content__item .content__des button {
+  background-color: #fc02029d;
+  color: white;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+}
+/*# sourceMappingURL=news_info.css.map */

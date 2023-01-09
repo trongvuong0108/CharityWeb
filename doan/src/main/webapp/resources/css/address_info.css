@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.signup__card {
+  display: flex;
+  gap: 20px;
+  padding: 20px 50px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.signup__card .signup__cover img {
+  width: 100%;
+  height: 500px;
+}
+
+.signup__card .signup__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.signup__card .signup__container .signup__navigation {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.signup__card .signup__container .signup__navigation a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  background-color: #fc02029d;
+  border-radius: 20px;
+}
+
+.signup__card .signup__container .signup__logo {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.signup__card .signup__container .signup__logo img {
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 10px rgba(252, 9, 9, 0.363);
+}
+
+.signup__card .signup__container .signup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signup__card .signup__container .signup__form label {
+  color: #fc02029d;
+  font-weight: 600;
+}
+
+.signup__card .signup__container .signup__form input {
+  width: 100%;
+  padding: 10px 5px;
+  padding-left: 20px;
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid #fc02029d;
+  color: #fc02029d;
+}
+
+.signup__card .signup__container .signup__form .signup__choose {
+  display: flex;
+  gap: 40px;
+}
+
+.signup__card .signup__container .signup__form .signup__options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.signup__card .signup__container .signup__form .signup__options input {
+  width: fit-content;
+}
+
+.signup__card .signup__container .signup__form button {
+  width: 100px;
+  background-color: #fc02029d;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.signup__model__container {
+  height: 100vh;
+  background-color: rgba(51, 51, 51, 0.534);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.signup__model__container .signup__model {
+  background-color: white;
+  padding: 30px 100px;
+  border: 5px solid #fc02029d;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+}
+
+.signup__model__container .signup__model .model__title {
+  font-size: 25px;
+  color: #fc02029d;
+}
+
+.signup__model__container .signup__model .model__code {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.signup__model__container .signup__model .model__code input {
+  width: 75px;
+}
+
+.signup__model__container .signup__model .model__resend {
+  display: flex;
+  gap: 1rem;
+  font-size: 18px;
+}
+
+.signup__model__container .signup__model .model__resend button {
+  padding: 0.25rem 1rem;
+  color: white;
+  background-color: #fc02029d;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+
+.signup__model__container .signup__model .model__confirm {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  background-color: #fc02029d;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+
+.signup__model__container .signup__model .model__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.signup__model__container .signup__model .model__close::after {
+  content: "\0274c";
+}
